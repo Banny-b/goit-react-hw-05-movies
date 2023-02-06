@@ -1,10 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import { App } from 'components/App';
-import './index.css';
+import { ThemeProvider } from 'styled-components';
+import { ToTop } from './components/ScrollTop/ToTop';
+import { theme } from './styles/theme';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename="react-homework-template">
+      <ThemeProvider theme={theme}>
+        <App />
+        <ToTop />
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
