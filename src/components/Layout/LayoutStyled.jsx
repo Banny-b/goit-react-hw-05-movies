@@ -33,7 +33,7 @@ export const Nav = styled.nav`
   padding: 20px;
   gap: 20px;
   margin-bottom: 20px;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: ${props => props.theme.colors.buttonBg};
 `;
 
