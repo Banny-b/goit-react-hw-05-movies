@@ -1,8 +1,11 @@
 export const setSliderSettings = actors => {
   const settings = {
-    speed: 500,
     slidesToShow: 4,
-    swipeToSlide: true,
+    arrows: true,
+    autoplay: true,
+    slidesToScroll: 1,
+    autoplaySpeed: 5000,
+    swipeToSlide: false,
   };
 
   if (actors < 5) {
