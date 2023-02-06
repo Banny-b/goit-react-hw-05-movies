@@ -5,7 +5,7 @@ export const setSliderSettings = actors => {
     autoplay: true,
     slidesToScroll: 1,
     autoplaySpeed: 5000,
-    swipeToSlide: false,
+    pauseOnDotsHover: true,
   };
 
   if (actors < 5) {
